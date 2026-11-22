@@ -1,0 +1,267 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#f6f2e9">
+<title>Biblio — Stories Worth Knowing</title>
+<style>
+:root {
+  --paper: #f6f2e9;
+  --ink: #24231f;
+  --muted: #777268;
+  --line: #ded8cb;
+  --accent: #8b6548;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", serif;
+}
+a { color: inherit; text-decoration: none; }
+header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 28px 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+}
+.logo {
+  font-size: 34px;
+  font-weight: bold;
+  letter-spacing: -1.5px;
+}
+nav {
+  display: flex;
+  gap: 28px;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+nav a:hover { color: var(--accent); }
+.hero {
+  max-width: 1200px;
+  margin: auto;
+  padding: 105px 9% 100px;
+  text-align: center;
+}
+.eyebrow {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+h1 {
+  font-size: clamp(54px, 9vw, 104px);
+  line-height: 1.02;
+  font-weight: normal;
+  letter-spacing: -4px;
+  margin: 28px 0;
+}
+.hero p {
+  max-width: 570px;
+  margin: 0 auto;
+  font-size: 20px;
+  line-height: 1.7;
+  color: var(--muted);
+}
+.button {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 16px 30px;
+  background: var(--ink);
+  color: var(--paper);
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.button:hover { background: var(--accent); }
+.divider {
+  max-width: 1050px;
+  margin: auto;
+  border-top: 1px solid var(--line);
+}
+.section {
+  max-width: 1100px;
+  margin: auto;
+  padding: 75px 7%;
+}
+.section h2 {
+  font-size: 43px;
+  font-weight: normal;
+  margin: 15px 0;
+}
+.section-intro {
+  font-size: 17px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 600px;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+  margin-top: 40px;
+}
+.card {
+  border: 1px solid var(--line);
+  padding: 30px 24px;
+  min-height: 180px;
+}
+.card span {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: var(--accent);
+  text-transform: uppercase;
+}
+.card h3 {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 18px 0 10px;
+}
+.card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--muted);
+}
+.manifesto {
+  background: #eae4d8;
+  text-align: center;
+  padding: 85px 9%;
+}
+.manifesto h2 {
+  font-size: clamp(34px, 6vw, 57px);
+  font-weight: normal;
+  line-height: 1.2;
+  max-width: 750px;
+  margin: 25px auto;
+}
+.manifesto p {
+  font-size: 16px;
+  color: var(--muted);
+}
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  font-size: 13px;
+  color: var(--muted);
+}
+@media(max-width:650px) {
+  header { padding: 22px 6%; }
+  .logo { font-size: 29px; }
+  nav { gap: 12px; font-size: 10px; }
+  .hero { padding: 85px 7%; }
+  h1 { letter-spacing: -2px; }
+  .hero p { font-size: 17px; }
+  .cards { grid-template-columns: 1fr; }
+  .section { padding: 60px 7%; }
+  .section h2 { font-size: 36px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="logo" href="#">biblio.</a>
+  <nav>
+    <a href="#library">Library</a>
+    <a href="#about">About</a>
+    <a href="#community">Community</a>
+  </nav>
+</header>
+
+<main>
+<section class="hero">
+  <div class="eyebrow">An independent library of human stories</div>
+  <h1>Stories<br>Worth Knowing.</h1>
+  <p>
+    Extraordinary true stories. Remarkable people.
+    Forgotten histories. Knowledge worth sharing.
+    A world of discovery, open to everyone.
+  </p>
+  <a class="button" href="#library">Explore Biblio</a>
+</section>
+
+<div class="divider"></div>
+
+<section class="section" id="library">
+  <div class="eyebrow">The collection</div>
+  <h2>A world waiting to be discovered.</h2>
+  <p class="section-intro">
+    From extraordinary lives to overlooked moments
+    in history, Biblio is being built as a home for
+    fascinating, carefully sourced true stories.
+  </p>
+
+  <div class="cards">
+    <article class="card">
+      <span>01 — History</span>
+      <h3>Forgotten History</h3>
+      <p>People, places and events that deserve to be remembered.</p>
+    </article>
+    <article class="card">
+      <span>02 — Humanity</span>
+      <h3>Human Stories</h3>
+      <p>Remarkable lives, experiences and moments of courage.</p>
+    </article>
+    <article class="card">
+      <span>03 — Discovery</span>
+      <h3>Beyond the Known</h3>
+      <p>Discoveries, ideas and fascinating facts from our world.</p>
+    </article>
+  </div>
+</section>
+
+<section class="manifesto" id="about">
+  <div class="eyebrow">Our philosophy</div>
+  <h2>Knowledge should be shared, not hidden behind a paywall.</h2>
+  <p>Free to read. Free to contribute. Independent by design.</p>
+</section>
+
+<section class="section" id="community">
+  <div class="eyebrow">Built together</div>
+  <h2>A library shaped by people.</h2>
+  <p class="section-intro">
+    Biblio welcomes community submissions and
+    encourages readers to participate in evaluating
+    stories. Every published story deserves credible
+    sourcing, careful review and editorial attention.
+  </p>
+  <div class="cards">
+    <article class="card">
+      <span>Contribute</span>
+      <h3>Share a Story</h3>
+      <p>Help bring extraordinary true stories to light.</p>
+    </article>
+    <article class="card">
+      <span>Participate</span>
+      <h3>Rate & Review</h3>
+      <p>Community members will be able to rate stories from 1 to 100.</p>
+    </article>
+    <article class="card">
+      <span>Independent</span>
+      <h3>Ad-Free Forever</h3>
+      <p>Supported by voluntary contributions, never advertising.</p>
+    </article>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="logo">biblio.</div>
+  <p>Stories Worth Knowing.</p>
+  <p>Independent. Accessible. Open to Everyone.</p>
+  <p>© 2026 Biblio</p>
+</footer>
+
+</body>
+</html>
